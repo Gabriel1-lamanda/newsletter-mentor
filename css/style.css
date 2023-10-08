@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: auto;
+    font-family: 'Roboto'
+}
+.pink{
+    background: pink;
+}
+.email{
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    flex-direction: column;
+}
+.email label{
+    font-size: 13px;
+    font-weight: 600;
+    font-weight: bold;
+}.messages{
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+    font-family: 'Roboto'
+}
+.messages span{
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #37384E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main{
+    width: 70%;
+    height: 95%;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 30px;
+    display: flex;
+    padding: 0 0 0 5rem;
+    align-items: center;
+    overflow: hidden;
+}
+
+main h1{
+    font-size: 49px;
+    margin-bottom: 2rem
+}
+main section{
+    flex: 1;
+}
+main section p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+main section ul{
+    list-style-type: square;
+    list-style-position: inside;
+    line-height: 2rem;
+    
+    /* color: blue; */
+    list-style-image: url("../assets/images/icon-list.svg");
+    margin-bottom: 2rem;
+}
+main section ul li{
+    vertical-align: middle;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    height: 50px;
+    width: 360px;
+    padding-inline: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 1rem;
+}
+form button{
+    width: 360px;
+    border: none;
+    outline: none;
+    background: #242643;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+main figure{
+    flex: 1;
+    height: inherit;
+    /* padding-top: 100px; */
+    /* border-radius: 5px; */
+
+}
+main figure img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>News letter</title>
+  </head>
+  <body>
+    <div id="app" class="container">
+      <main>
+        <section>
+          <h1>Stay Updated!</h1>
+          <p>
+            Join 60,000+ project managers recieving monthly <br />
+            updates on:
+          </p>
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more</li>
+          </ul>
+          <form @submit.prevent="validate" action="">
+            <div class="email">
+              <div class="messages">
+              <label for="">Email Address:</label>
+              <span>{{ errorMessage}}</span>
+            </div>
+              <input @keyup="changebutton" type="text" v-model="email"/>
+            </div>
+            <button type="submit" :class="{pink : isActive}">Subscribe to monthly news letter</button>
+          </form>
+        </section>
+        <figure>
+          <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustrate image">
+        </figure>
+      </main>
+    </div>
+    <script src="manic.js"></script>
+  </body>
+</html>
